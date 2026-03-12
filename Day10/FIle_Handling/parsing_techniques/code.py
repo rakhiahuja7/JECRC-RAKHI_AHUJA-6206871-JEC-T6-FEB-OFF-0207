@@ -10,7 +10,7 @@
 import json
 file = open('temp1.txt', 'a+')
 data = {
-    'Fullname' : 'Priya Saini',
+    'Fullname' : 'Rakhi Ahuja',
     'userId' : 'user123',
     'password' : '*****'
 }
