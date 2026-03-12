@@ -17,16 +17,16 @@ data = {
 
 # print(f'Original Data: {data}')
 # print(f'type of Original data: {type(data)}')
-enc_data = json.dumps(data)
-file.write(enc_data)
+# enc_data = json.dumps(data)
+# file.write(enc_data)
 
-file.seek(0)
+# file.seek(0)
 
-enc_data = file.read()
-print(type(enc_data))
+# enc_data = file.read()
+# print(type(enc_data))
 
-ori_data = json.loads(enc_data)
-print(ori_data, type(ori_data))
+# ori_data = json.loads(enc_data)
+# print(ori_data, type(ori_data))
 
 # enc_data = json.dumps(data)
 
@@ -41,26 +41,26 @@ print(ori_data, type(ori_data))
 # print()
 
 
-# import pickle
-# file = open('temp.txt', 'ab+')
-# data = {
-#     'Fullname' : 'Priya Saini',
-#     'userId' : 'user123',
-#     'password' : '*****'
-# }
+import pickle
+file = open('temp.txt', 'ab+')
+data = {
+    'Fullname' : 'Rakhi Ahuja',
+    'userId' : 'user123',
+    'password' : '*****'
+}
 
-# print(f'Original Data: {data}')
-# print(f'type of Original data: {type(data)}')
-# enc_data = pickle.dumps(data)
-# file.write(enc_data)
+print(f'Original Data: {data}')
+print(f'type of Original data: {type(data)}')
+enc_data = pickle.dumps(data)
+file.write(enc_data)
 
-# file.seek(0)
+file.seek(0)
 
-# enc_data = file.read()
-# print(type(enc_data))
+enc_data = file.read()
+print(type(enc_data))
 
-# ori_data = pickle.loads(enc_data)
-# print(ori_data, type(ori_data))
+ori_data = pickle.loads(enc_data)
+print(ori_data, type(ori_data))
 
 # enc_data = pickle.dumps(data)
 
